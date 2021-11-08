@@ -18,6 +18,6 @@ VOLUME /app
 EXPOSE 6001
 
 HEALTHCHECK --interval=1m --timeout=5s \
-RUN curl --fail http://localhost:6001/heartbeat || exit 1
+CMD curl --fail http://localhost:6001/heartbeat || exit 1
 
 CMD ["start"]
