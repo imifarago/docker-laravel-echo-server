@@ -1,0 +1,39 @@
+{
+	"authHost": "#PLACEHOLDER_AUTH_HOST#",
+	"authEndpoint": "#PLACEHOLDER_AUTH_ENDPOINT#",
+	"clients": [
+		{
+			"appId": "#PLACEHOLDER_APP_ID#",
+			"key": "#PLACEHOLDER_APP_KEY#"
+		}
+	],
+	"database": "#PLACEHOLDER_DATABASE#",
+	"databaseConfig": {
+		"redis": {
+			"host": "#PLACEHOLDER_REDIS_HOST#",
+			"port": "#PLACEHOLDER_REDIS_PORT#",
+			"keyPrefix": "#PLACEHOLDER_REDIS_KEYPREFIX#",
+			"options": {
+				"db": "#PLACEHOLDER_REDIS_OPTS_DB#"
+			}
+		},
+		"sqlite": {
+			"databasePath": "/database/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": #PLACEHOLDER_DEV_MODE#,
+	"host": #PLACEHOLDER_HOST#,
+	"port": 6001,
+	"protocol": "#PLACEHOLDER_PROTOCOL#",
+	"socketio": {},
+	"subscribers": {
+		"http": #PLACEHOLDER_SUBSCRIBERS_HTTP#,
+		"redis": #PLACEHOLDER_SUBSCRIBERS_REDIS#
+	},
+	"apiOriginAllow": {
+		"allowCors": #PLACEHOLDER_API_ORIGIN_CORS#,
+		"allowOrigin": "#PLACEHOLDER_API_ORIGIN_ALLOW#",
+		"allowMethods": "#PLACEHOLDER_API_ORIGIN_METHODS#",
+		"allowHeaders": "#PLACEHOLDER_API_ORIGIN_HEADERS#"
+	}
+}
