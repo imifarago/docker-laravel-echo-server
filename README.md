@@ -1,12 +1,15 @@
 # Laravel Echo Server docker
-
-Laravel echo server docker image based on nodejs 17 and alpine linux
+ 
+Laravel echo server docker image based on nodejs 17 and alpine linux 
 
 ## GitHub
 https://github.com/imifarago/docker-laravel-echo-server 
 
+## For :whispers version we use this version of the echo server:
+https://github.com/tthdvd/laravel-echo-server 
+
 # DockerHub
-https://hub.docker.com/r/imifarago/laravel-echo-server
+https://hub.docker.com/r/imifarago/laravel-echo-server 
 
 ## Port
 Listens on 6001. 
@@ -37,4 +40,7 @@ Or set environment variables:
 * `ECHO_API_ORIGIN_HEADERS` default empty string
 
 ## Run
-`docker run --env-file <env> imifarago/laravel-echo-server:latest`
+`docker run --env-file <env> imifarago/laravel-echo-server:latest` 
+`docker run --env-file <env> imifarago/laravel-echo-server:whispers` 
+ 
+Or instead of `--env-file` mount `laravel-echo-server.json` into `/app/laravel-echo-server.json` 
